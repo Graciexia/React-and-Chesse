@@ -1,0 +1,73 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+$navy: #34495e;
+$blue: #3498db;
+$green: #1abc9c;
+$dkgrey: #666666;
+$source: "Comic Sans MS";
+h1 {
+  font-family: $source, helvetica, arial, sans-serif;
+  font-size: 4em;
+  color: $navy;
+}
+
+h2{
+  font-family: $source, helvetica, arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.8em;
+  line-height: 1.2;
+  color: $green;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: $source, helvetica, arial, sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: $dkgrey;
+}
+
+button {
+  font-family: $source;
+  font-size: 1.2em;
+  color: #fff;
+  border-radius: 5px;
+  border: 0;
+
+}
+
+footer{
+  font-size: 1em;
+  font-family: $source;
+}
+
+  .welcome-image {
+    width: 100%;
+    margin-bottom: 18px;
+  }
+  .join-btn,
+  .sign-up-btn {
+    margin-top: 20px;
+    background-color: $green;
+    width: 200px;
+    padding: 10px;
+    margin-right: 10px;
+  }
+
+  .login-btn {
+    background-color: $blue;
+    width: 200px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+
+
+strong {
+  font-weight: 600;
+}
+
+footer {
+  margin-top: 60px;
+}

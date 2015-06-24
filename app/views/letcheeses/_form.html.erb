@@ -1,0 +1,21 @@
+<%= form_for(@letcheese) do |f| %>
+  <% if @letcheese.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@letcheese.errors.count, "error") %> prohibited this letcheese from being saved:</h2>
+
+      <ul>
+      <% @letcheese.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :own_cheeses %><br>
+    <%= f.text_field :own_cheeses %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

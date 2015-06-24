@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Letcheeses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Own cheeses</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @letcheeses.each do |letcheese| %>
+      <tr>
+        <td><%= letcheese.own_cheeses %></td>
+        <td><%= link_to 'Show', letcheese %></td>
+        <td><%= link_to 'Edit', edit_letcheese_path(letcheese) %></td>
+        <td><%= link_to 'Destroy', letcheese, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Letcheese', new_letcheese_path %>
